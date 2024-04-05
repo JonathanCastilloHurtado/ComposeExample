@@ -26,8 +26,9 @@ android {
             )
         }
     }
+    //compose needed
     buildFeatures {
-        compose = true
+         compose=true
 
     }
 
@@ -35,16 +36,18 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    //compose needed
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.0"
     }
-
+    //kotlin needed
     kotlinOptions {
         jvmTarget = "1.8"
     }
 }
 
 dependencies {
+    //ALL DEPENDENCIES COMPOSE NEEDED
     implementation ("androidx.compose.ui:ui:1.2.1")
     // Tooling support (Previews, etc.)
     implementation ("androidx.compose.ui:ui-tooling:1.2.1")
